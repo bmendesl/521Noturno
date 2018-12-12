@@ -12,6 +12,19 @@ except Exception as e:
 
 app = Flask(__name__)
 
+def validar_json(json):
+    if json:
+        try:
+            if json['nome'] and json['_id']:
+                db.usuarios.insert(json)
+                return True
+            else:
+                return False
+        except KeyError:
+            return False
+    else:
+        return False
+
 # route parametro de um metodo, o que muda e o que renderiza na rota
 # veio com minha url e tenho essa info no meu backend usando como string
 @app.route('/<string:nome>', methods=['GET'])
@@ -24,16 +37,24 @@ def index(nome):
 #     return jsonify(list(db.usuarios.find())) #find cursor que transformamos em lista
 
 # pegando todos da tabela usuarios no banco - outro modo
-@app.route('/usuarios', methods=['GET', 'POST'])
+@app.route('/usuarios', methods=['GET', 'POST', 'PUT'])
 def usuarios():
     if request.method == 'GET':
         return jsonify(list(db.usuarios.find())) #find cursor que transformamos em lista
     else:
-        data = request.get_json()
-        return 'success'
-        
+        data = request.get_json() #recebe o post do POSTMAN com formato json e trata se e vazio
+        if isinstance(data, dict):   #isinstance funciona como teste, nesse caso se o objeto for dicionario true 
+            status = validar_json(data)
+            return jsonify({'status': status})
+        elif isinstance(data, list):
+            for registro in data:
+                if not validar_json(registro):
+                    return jsonify({'status': False})
+                else:
+                    return jsonify({'status': True})
+            
 # # Passando o id do usuario no banco na tabela usuarios e ele retorna com os dados do usuario
-@app.route('/usuario/<int:id>', methods=['GET'])
+@app.route('/usuario/<int:id>', methods=['GET', 'PUT'])
 def get_user_id(id):
     return jsonify(db.usuarios.find_one({'_id':id})) #find_one ja tras com formato de dicionario sem precisar de trazer em formato lista
 
@@ -51,11 +72,11 @@ def register_user():
     print(request.get_json()) #request usamos para pegar dados que o usuario envia
     return 'success'
 
-
+# esta escutando de todos os ips
+# debug nunca por em PROD, pq fica vulneravel
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True, port=5000)
-    # esta escutando de todos os ips
-    # debug nunca por em PROD, pq fica vulneravel
+
 
 
 
