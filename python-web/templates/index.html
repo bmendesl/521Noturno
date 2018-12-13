@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+Index
+{% endblock %}
+
+{% block body %}
+    <h1>Titulo</h1>
+    <p>Hello world</p>
+    <!-- ginja para montar template dinamico -->
+    {% for n in numeros %}
+        {% if n % 2 == 0 %}
+            <p>{{n}}</p>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
