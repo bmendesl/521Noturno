@@ -22,3 +22,64 @@ pipp3 install pymongo - para conseguirmos conectar com o mongo com o python
 
 
 ---------------------------------------------------------------------------------------------------
+https://www.w3schools.com/
+
+
+install docker
+
+https://get.docker.com/
+
+imagens:
+
+https://hub.docker.com/
+
+curl -X GET https://get.docker.com/ | bash
+
+developer@developer:~/521Noturno$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+developer@developer:~/521Noturno$ docker ps -a 
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+docker run -dti ubuntu bash
+docker attach 8d777546de37
+Ctrl+p+q
+docker exec -ti 8d777546de37 bash
+developer@developer:~/521Noturno$ docker stop dreamy_diffie
+dreamy_diffie
+developer@developer:~/521Noturno$ docker start dreamy_diffie
+dreamy_diffie
+
+developer@developer:~/521Noturno$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              93fd78260bd1        3 weeks ago         86.2MB
+
+developer@developer:~/521Noturno$ docker ps -a 
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+8d777546de37        ubuntu              "bash"              7 minutes ago       Up 2 minutes                            dreamy_diffie
+developer@developer:~/521Noturno$ docker rm dreamy_diffie
+
+developer@developer:~/521Noturno$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              93fd78260bd1        3 weeks ago         86.2MB
+developer@developer:~/521Noturno$ docker rmi ubuntu
+
+docker inspect dreamy_diffie
+
+developer@developer:~/521Noturno$ docker logs dreamy_diffie
+root@8d777546de37:/# cat /etc/os-release 
+NAME="Ubuntu"
+VERSION="18.04.1 LTS (Bionic Beaver)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 18.04.1 LTS"
+VERSION_ID="18.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=bionic
+UBUNTU_CODENAME=bionic
+root@8d777546de37:/# exit
+
+
