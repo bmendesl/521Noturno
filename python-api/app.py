@@ -18,7 +18,6 @@ def validar_json(json, method='GET'):
     if json:
         try:
             if json['nome'] and json['_id']:
-                db.usuarios.insert(json)
                 return True
             else:
                 return False
