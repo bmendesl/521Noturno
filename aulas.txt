@@ -23,7 +23,10 @@ pipp3 install pymongo - para conseguirmos conectar com o mongo com o python
 
 ---------------------------------------------------------------------------------------------------
 https://www.w3schools.com/
-
+https://itnext.io/immutable-infrastructure-using-packer-ansible-and-terraform-7ca6f79582b8
+https://www.packer.io/
+https://docs.docker.com/
+https://docs.docker.com/engine/
 
 install docker
 
@@ -83,3 +86,10 @@ UBUNTU_CODENAME=bionic
 root@8d777546de37:/# exit
 
 
+docker run -dti --name flask-app -p5000:5000 ubuntu bash
+
+docker pull python:alpine
+
+docker run -ti -name flask-app -p5000:5000 python:alpine sh
+
+inside vim   - :set tabstopp=4

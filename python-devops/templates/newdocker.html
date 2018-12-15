@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Docker{% endblock title %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-md-offset-2">
+
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h1 class="panel-title clearfix">Docker</h1>
+                </div>
+
+                <!-- itera containers -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"><i class="glyphicon glyphicon-barcode"></i> ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col"><i class="glyphicon glyphicon-film"></i> Image</th>
+                            <th scope="col"><i class="glyphicon glyphicon-stats"></i> Status</th>
+                            <th scope="col" style="text-align: center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for container in containers %}
+                        <tr>
+                            <th scope="row">{{container.short_id}}</th>
+                            <td>{{container.name.title()}}</td>
+                            <td>{{container.image.tags[0]}}</td>
+                            <td>{{container.status.title()}}</td>
+                            <td>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        {% if container.status == 'exited'%}
+                                        <a href="/docker/start/{{container.short_id}}" class="btn btn-primary">Iniciar</a>
+                                        {% else %}
+                                        <a href="/docker/stop/{{container.short_id}}" class="btn btn-warning">Parar</a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}
