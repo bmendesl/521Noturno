@@ -27,6 +27,8 @@ https://itnext.io/immutable-infrastructure-using-packer-ansible-and-terraform-7c
 https://www.packer.io/
 https://docs.docker.com/
 https://docs.docker.com/engine/
+https://wiki.jenkins.io/display/JENKINS/Groovy+plugin
+https://jenkins.io/doc/
 
 install docker
 
@@ -93,3 +95,27 @@ docker pull python:alpine
 docker run -ti -name flask-app -p5000:5000 python:alpine sh
 
 inside vim   - :set tabstopp=4
+
+----------------------
+
+docker pull jenkins/jenkins:lts
+docker run -dti --name jenkins -p8080:8080 jenkins/jenkins:lts
+
+
+Configurar a API do docker
+/etc/systemd/system/docker.service 
+linha 13  - adicionar no final   tcp ...
+ExecStart=/usr/bin/dockerd -H unix:// -H tcp://0.0.0.0:2376
+
+systemctl deamon.reload
+systemctl restart docker
+
+
+docker logs jenkins
+
+docker exec -ti flask-app bash - abre um novo bash
+
+docker attach 8d777546de37 - Entra no bash que ja esta running
+
+pip3 install python-jenkins
+
