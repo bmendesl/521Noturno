@@ -2,10 +2,11 @@
 
 from flask import Flask, render_template
 from pdocker.bdocker import docker
+from pjenkins.bjenkins import jenkins
 
 app  = Flask(__name__)
 app.register_blueprint(docker) #registro a minha rota com blueprint
-
+app.register_blueprint(jenkins)
 
 @app.route("/")
 def index():

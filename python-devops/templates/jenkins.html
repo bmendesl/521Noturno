@@ -13,22 +13,26 @@
                         <tr>
                             <th>Job</th>
                             <th>Status</th>
-                            <th>Ultima vez</th>
                             <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>==NOME DO JOB==</td>
-                            <td>
-                                <img src="==IMAGEM DE ESTADO DO JENKINS==" alt="Icon">
-                            </td>
-                            <td>==STATUS DO ULTIMO BUILD==</td>
-                            <td>
-                                <a href="/jenkins/build/==NOME DO JOB==" class="glyphicon glyphicon-repeat"></a>
-                                <a href="/jenkins/update/==NOME DO JOB==" class="glyphicon glyphicon-pencil"></a>
-                            </td>
-                        </tr>
+                        {% for job in jobs %}
+                            <tr>
+                                <td>{{job['name']}}</td>
+                                <td>
+                                    {% if job.get('color') %}
+                                        <img src="{{ url_for('static', filename=job['color']+'.png') }}" alt="Icon">
+                                    {% else %}
+                                        <img src="{{ url_for('static', filename='notbuilt.png') }}" alt="Icon">
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <a href="/jenkins/build/{{job['name']}}" class="glyphicon glyphicon-repeat"></a>
+                                    <a href="/jenkins/update/{{job['name']}}" class="glyphicon glyphicon-pencil"></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>
