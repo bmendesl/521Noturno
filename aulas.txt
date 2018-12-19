@@ -119,3 +119,15 @@ docker attach 8d777546de37 - Entra no bash que ja esta running
 
 pip3 install python-jenkins
 
+baixar image do gitlab
+
+docker pull gitlab/gitlab-ce
+
+criar docker
+docker run -dti --name gitlab -p8000:80 gitlab/gitlab-ce
+
+
+developer@developer:~/521Noturno/python-devops$ docker inspect gitlab | grep -i ipaddress
+            "SecondaryIPAddresses": null,
+            "IPAddress": "172.17.0.3",
+                    "IPAddress": "172.17.0.3"
