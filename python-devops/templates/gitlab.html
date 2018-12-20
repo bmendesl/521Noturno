@@ -19,12 +19,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>==EMAIL DO USUÁRIO==</td>
-                            <td>==USERNAME DO USUÁRIO==</td>
-                            <td>==ESTADO DO USUÁRIO==</td>
-                            <td>==USUÁRIO É ADMIN==</td>
-                        </tr>
+                        {% for user in users %}
+                            <tr>
+                                <td>{{user.email}}</td>
+                                <td>{{user.username}}</td>
+                                <td>{{user.state}}</td>
+                                <td>{{user.is_admin}}</td>
+                            </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>
@@ -33,19 +35,21 @@
                 <table class="table table-striped table-responsive">
                     <thead>
                         <tr>
-                            <th>Nome do projeto</th>
+                            <th>Nome do Projeto</th>
                             <th>Link SSH</th>
                             <th>Dono</th>
                             <th>Caminho</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>==NOME DO PROJETO==</td>
-                            <td>==SSH DO PROJETO==</td>
-                            <td>==USERNAME DO DONO DO PROJETO==</td>
-                            <td>==CAMINHO DO PROJETO==</td>
-                        </tr>
+                        {% for project in projects %}
+                            <tr>
+                                <td>{{project.name}}</td>
+                                <td>{{project.ssh_url_to_repo}}</td>
+                                <td>{{project.owner.username}}</td>
+                                <td>{{project.path}}</td>
+                            </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>

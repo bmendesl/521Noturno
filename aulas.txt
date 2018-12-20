@@ -29,6 +29,8 @@ https://docs.docker.com/
 https://docs.docker.com/engine/
 https://wiki.jenkins.io/display/JENKINS/Groovy+plugin
 https://jenkins.io/doc/
+https://python-gitlab.readthedocs.io/en/stable/api-usage.html - doc do python com gitlab
+https://python-gitlab.readthedocs.io/en/stable/gl_objects/users.html
 
 install docker
 
