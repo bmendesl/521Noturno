@@ -133,3 +133,44 @@ developer@developer:~/521Noturno/python-devops$ docker inspect gitlab | grep -i 
             "SecondaryIPAddresses": null,
             "IPAddress": "172.17.0.3",
                     "IPAddress": "172.17.0.3"
+
+
+OPEN LDAP
+
+
+sudo apt install slapd
+sudo apt install ldap-utils
+sudo dpkg-reconfigure slapd
+
+sudo slapcat
+
+ldapadd -x -D "cn=admin,dc=dexter,dc=com,dc=br" -f user.ldif -W
+
+
+developer@developer:~$ ldapsearch -x -LLL -b dc=dexter,dc=com,dc=br
+dn: dc=dexter,dc=com,dc=br
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: dexter
+dc: dexter
+
+dn: cn=admin,dc=dexter,dc=com,dc=br
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+
+dn: uid=bruno@4linux.com.br,dc=dexter,dc=com,dc=br
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+uid: bruno
+uid: bruno@4linux.com.br
+sn: Bruno
+cn: Lima
+mail: bruno@4linux.com.br
+mobile: 99999-9999
+telephoneNumber: 2222-2222
+description: "Especialista em Desenvolvimento Python"

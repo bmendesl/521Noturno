@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Gitlab{% endblock title %}
 {% block content %}
+{% if session['auth'] %}
 <div class="container">
     <div class="panel panel-primary">
         <div class="panel-heading">
@@ -56,4 +57,7 @@
         </div>
     </div>
 </div>
+{% else %}
+<p>Acesso Negado</p>
+{% endif %}
 {% endblock content %}
