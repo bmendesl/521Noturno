@@ -6,6 +6,7 @@ client.set_missing_host_key_policy(paramiko.AutoAddPolicy())#registra caso seja 
 
 
 
+
 client.connect(
     '192.168.203.10',
     username='noturno',

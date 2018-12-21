@@ -156,3 +156,11 @@
 [ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/93fd78260bd1495afb484371928661f63e64be306b7ac48e2d13ce9422dfee26/json HTTP/1.1" 200 None
 [ 21/12/2018 21:30:27 ] [ INFO ] werkzeug
 [ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 21:30:27] "GET /docker HTTP/1.1" 200 -
+[ 21/12/2018 21:50:21 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Detected change in '/home/developer/521Noturno/python-devops/app.py', reloading
+[ 21/12/2018 21:50:22 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Restarting with stat
+[ 21/12/2018 21:50:33 ] [ WARNING ] werkzeug
+[ _log ] [ _internal.py, 88]  * Debugger is active!
+[ 21/12/2018 21:50:33 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Debugger PIN: 267-920-112

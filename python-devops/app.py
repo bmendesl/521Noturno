@@ -23,6 +23,7 @@ app.register_blueprint(docker) #registro a minha rota com blueprint
 app.register_blueprint(jenkins)
 app.register_blueprint(gitlab)
 
+
 @app.route("/", methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':

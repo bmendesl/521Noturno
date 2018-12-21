@@ -174,3 +174,5 @@ mail: bruno@4linux.com.br
 mobile: 99999-9999
 telephoneNumber: 2222-2222
 description: "Especialista em Desenvolvimento Python"
+
+
