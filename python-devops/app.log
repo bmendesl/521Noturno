@@ -1,0 +1,158 @@
+[ 21/12/2018 19:18:24 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Running on http://127.0.0.1:5050/ (Press CTRL+C to quit)
+[ 21/12/2018 19:18:24 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Restarting with stat
+[ 21/12/2018 19:18:25 ] [ WARNING ] werkzeug
+[ _log ] [ _internal.py, 88]  * Debugger is active!
+[ 21/12/2018 19:18:25 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Debugger PIN: 267-920-112
+[ 21/12/2018 19:18:38 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:18:38] "GET / HTTP/1.1" 200 -
+[ 21/12/2018 19:18:38 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:18:38] "GET /favicon.ico HTTP/1.1" 404 -
+[ 21/12/2018 19:18:59 ] [ DEBUG ] urllib3.connectionpool
+[ _new_conn ] [ connectionpool.py, 205] Starting new HTTP connection (1): 127.0.0.1:2376
+[ 21/12/2018 19:18:59 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/json?size=0&limit=-1&trunc_cmd=0&all=1 HTTP/1.1" 200 None
+[ 21/12/2018 19:18:59 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bc352737370b58fdb0212d2c05e27c176a43c0605498a675a32ed1f74a13877f/json HTTP/1.1" 200 None
+[ 21/12/2018 19:18:59 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/58c26fb5b82526b555d416693d6d4aa25ecc7c40c51831b4a831b31204e2ce0a/json HTTP/1.1" 200 None
+[ 21/12/2018 19:18:59 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bd39214783a63bf6f5349e3d7a8e6ef9c085358aaf79c43b72597df34691b236/json HTTP/1.1" 200 None
+[ 21/12/2018 19:18:59 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/8d777546de3759c1656e7ddeada2e5a522719c93f5feffd989c18a6f28499aed/json HTTP/1.1" 200 None
+[ 21/12/2018 19:18:59 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:18:59] "GET /docker HTTP/1.1" 200 -
+[ 21/12/2018 19:19:05 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:19:05] "GET / HTTP/1.1" 200 -
+[ 21/12/2018 19:19:10 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:19:10] "POST / HTTP/1.1" 302 -
+[ 21/12/2018 19:19:11 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/json?size=0&limit=-1&trunc_cmd=0&all=1 HTTP/1.1" 200 None
+[ 21/12/2018 19:19:11 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bc352737370b58fdb0212d2c05e27c176a43c0605498a675a32ed1f74a13877f/json HTTP/1.1" 200 None
+[ 21/12/2018 19:19:11 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/58c26fb5b82526b555d416693d6d4aa25ecc7c40c51831b4a831b31204e2ce0a/json HTTP/1.1" 200 None
+[ 21/12/2018 19:19:11 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bd39214783a63bf6f5349e3d7a8e6ef9c085358aaf79c43b72597df34691b236/json HTTP/1.1" 200 None
+[ 21/12/2018 19:19:11 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/8d777546de3759c1656e7ddeada2e5a522719c93f5feffd989c18a6f28499aed/json HTTP/1.1" 200 None
+[ 21/12/2018 19:19:11 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/b0e83ed9366b6a36a480ab9af12118784ed71a19b89af63a0afc19c843a39d6f/json HTTP/1.1" 200 None
+[ 21/12/2018 19:19:11 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/5907903170ade987c3c732e07bbd2e8f3234e7684645c13d6276a281e6a3ea4d/json HTTP/1.1" 200 None
+[ 21/12/2018 19:19:11 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/aadc3feb2b19127b415dcdca5774812c37b0cbd9d70208058e8dd2d0ea6dbc9f/json HTTP/1.1" 200 None
+[ 21/12/2018 19:19:11 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/93fd78260bd1495afb484371928661f63e64be306b7ac48e2d13ce9422dfee26/json HTTP/1.1" 200 None
+[ 21/12/2018 19:19:11 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:19:11] "GET /docker HTTP/1.1" 200 -
+[ 21/12/2018 19:19:20 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:19:20] "GET /deslogar HTTP/1.1" 302 -
+[ 21/12/2018 19:19:20 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:19:20] "GET / HTTP/1.1" 200 -
+[ 21/12/2018 19:19:38 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:19:38] "POST / HTTP/1.1" 302 -
+[ 21/12/2018 19:19:38 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:19:38] "GET / HTTP/1.1" 200 -
+[ 21/12/2018 19:20:43 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Detected change in '/home/developer/521Noturno/python-devops/app.py', reloading
+[ 21/12/2018 19:20:43 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Restarting with stat
+[ 21/12/2018 19:20:45 ] [ WARNING ] werkzeug
+[ _log ] [ _internal.py, 88]  * Debugger is active!
+[ 21/12/2018 19:20:45 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Debugger PIN: 267-920-112
+[ 21/12/2018 19:20:50 ] [ WARNING ] root
+[ index ] [ app.py, 40] login ou senha invalida
+[ 21/12/2018 19:20:50 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:20:50] "POST / HTTP/1.1" 302 -
+[ 21/12/2018 19:20:50 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 19:20:50] "GET / HTTP/1.1" 200 -
+[ 21/12/2018 21:27:17 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Running on http://127.0.0.1:5050/ (Press CTRL+C to quit)
+[ 21/12/2018 21:27:17 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Restarting with stat
+[ 21/12/2018 21:27:18 ] [ WARNING ] werkzeug
+[ _log ] [ _internal.py, 88]  * Debugger is active!
+[ 21/12/2018 21:27:18 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88]  * Debugger PIN: 267-920-112
+[ 21/12/2018 21:27:31 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 21:27:31] "GET / HTTP/1.1" 200 -
+[ 21/12/2018 21:27:37 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 21:27:37] "POST / HTTP/1.1" 302 -
+[ 21/12/2018 21:27:37 ] [ DEBUG ] urllib3.connectionpool
+[ _new_conn ] [ connectionpool.py, 205] Starting new HTTP connection (1): 127.0.0.1:2376
+[ 21/12/2018 21:27:37 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/json?size=0&all=1&trunc_cmd=0&limit=-1 HTTP/1.1" 200 None
+[ 21/12/2018 21:27:37 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bc352737370b58fdb0212d2c05e27c176a43c0605498a675a32ed1f74a13877f/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:37 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/58c26fb5b82526b555d416693d6d4aa25ecc7c40c51831b4a831b31204e2ce0a/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:37 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bd39214783a63bf6f5349e3d7a8e6ef9c085358aaf79c43b72597df34691b236/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:37 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/8d777546de3759c1656e7ddeada2e5a522719c93f5feffd989c18a6f28499aed/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:37 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/b0e83ed9366b6a36a480ab9af12118784ed71a19b89af63a0afc19c843a39d6f/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:37 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/5907903170ade987c3c732e07bbd2e8f3234e7684645c13d6276a281e6a3ea4d/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:37 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/aadc3feb2b19127b415dcdca5774812c37b0cbd9d70208058e8dd2d0ea6dbc9f/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:37 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/93fd78260bd1495afb484371928661f63e64be306b7ac48e2d13ce9422dfee26/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:37 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 21:27:37] "GET /docker HTTP/1.1" 200 -
+[ 21/12/2018 21:27:46 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/58c26fb5b8/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:50 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "POST /v1.35/containers/58c26fb5b82526b555d416693d6d4aa25ecc7c40c51831b4a831b31204e2ce0a/start HTTP/1.1" 204 0
+[ 21/12/2018 21:27:50 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 21:27:50] "GET /docker/start/58c26fb5b8 HTTP/1.1" 302 -
+[ 21/12/2018 21:27:50 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/json?size=0&all=1&trunc_cmd=0&limit=-1 HTTP/1.1" 200 None
+[ 21/12/2018 21:27:50 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bc352737370b58fdb0212d2c05e27c176a43c0605498a675a32ed1f74a13877f/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:50 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/58c26fb5b82526b555d416693d6d4aa25ecc7c40c51831b4a831b31204e2ce0a/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:50 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bd39214783a63bf6f5349e3d7a8e6ef9c085358aaf79c43b72597df34691b236/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:50 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/8d777546de3759c1656e7ddeada2e5a522719c93f5feffd989c18a6f28499aed/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:50 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/b0e83ed9366b6a36a480ab9af12118784ed71a19b89af63a0afc19c843a39d6f/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:50 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/5907903170ade987c3c732e07bbd2e8f3234e7684645c13d6276a281e6a3ea4d/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:50 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/aadc3feb2b19127b415dcdca5774812c37b0cbd9d70208058e8dd2d0ea6dbc9f/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:50 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/93fd78260bd1495afb484371928661f63e64be306b7ac48e2d13ce9422dfee26/json HTTP/1.1" 200 None
+[ 21/12/2018 21:27:50 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 21:27:50] "GET /docker HTTP/1.1" 200 -
+[ 21/12/2018 21:30:23 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bc35273737/json HTTP/1.1" 200 None
+[ 21/12/2018 21:30:27 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "POST /v1.35/containers/bc352737370b58fdb0212d2c05e27c176a43c0605498a675a32ed1f74a13877f/start HTTP/1.1" 204 0
+[ 21/12/2018 21:30:27 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 21:30:27] "GET /docker/start/bc35273737 HTTP/1.1" 302 -
+[ 21/12/2018 21:30:27 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/json?size=0&all=1&trunc_cmd=0&limit=-1 HTTP/1.1" 200 None
+[ 21/12/2018 21:30:27 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bc352737370b58fdb0212d2c05e27c176a43c0605498a675a32ed1f74a13877f/json HTTP/1.1" 200 None
+[ 21/12/2018 21:30:27 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/58c26fb5b82526b555d416693d6d4aa25ecc7c40c51831b4a831b31204e2ce0a/json HTTP/1.1" 200 None
+[ 21/12/2018 21:30:27 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/bd39214783a63bf6f5349e3d7a8e6ef9c085358aaf79c43b72597df34691b236/json HTTP/1.1" 200 None
+[ 21/12/2018 21:30:27 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/containers/8d777546de3759c1656e7ddeada2e5a522719c93f5feffd989c18a6f28499aed/json HTTP/1.1" 200 None
+[ 21/12/2018 21:30:27 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/b0e83ed9366b6a36a480ab9af12118784ed71a19b89af63a0afc19c843a39d6f/json HTTP/1.1" 200 None
+[ 21/12/2018 21:30:27 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/5907903170ade987c3c732e07bbd2e8f3234e7684645c13d6276a281e6a3ea4d/json HTTP/1.1" 200 None
+[ 21/12/2018 21:30:27 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/aadc3feb2b19127b415dcdca5774812c37b0cbd9d70208058e8dd2d0ea6dbc9f/json HTTP/1.1" 200 None
+[ 21/12/2018 21:30:27 ] [ DEBUG ] urllib3.connectionpool
+[ _make_request ] [ connectionpool.py, 393] http://127.0.0.1:2376 "GET /v1.35/images/93fd78260bd1495afb484371928661f63e64be306b7ac48e2d13ce9422dfee26/json HTTP/1.1" 200 None
+[ 21/12/2018 21:30:27 ] [ INFO ] werkzeug
+[ _log ] [ _internal.py, 88] 127.0.0.1 - - [21/Dec/2018 21:30:27] "GET /docker HTTP/1.1" 200 -

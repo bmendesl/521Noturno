@@ -6,6 +6,15 @@ from pjenkins.bjenkins import jenkins
 from git_routes.git import gitlab
 from ldap3 import Connection, Server
 from os import urandom
+import logging
+
+logging.basicConfig(
+    filename='app.log',
+    level= logging.DEBUG,
+    format= "%(asctime)s [ %(levelname)s ] %(name)s\n" +
+    "[ %(funcName)s ] [ %(filename)s, %(lineno)s] %(message)s",
+    datefmt= "[ %d/%m/%Y %H:%M:%S ]" 
+)
 
 server = Server('ldap://127.0.0.1:389')
 
@@ -28,6 +37,7 @@ def index():
         session['auth'] = con.bind()
         if session['auth']:
             return redirect('/docker')
+        logging.warning("login ou senha invalida")
         return redirect('/')
 
 @app.route('/deslogar')
